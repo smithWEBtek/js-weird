@@ -1,10 +1,17 @@
+var person = new Object();
 
+person["firstname"] = "Tony";
+person["lastname"] = "Smith";
+person["name"] = person.firstname + " " + person.lastname
 
-function greet(name){
-  name = name || '<your name here>'
-  console.log("Hello " + name)
-}
+console.log(person)
+console.log(person.name)
 
-greet("Tony");
-greet(0);
-greet();
+person["address"]  = new Object();
+person.address.number = "483"
+person.address.street = "Donald"
+person.address.city = "Bedford"
+person.address.state = "NH"
+person.address.zip = "03110"
+person.address.ziplast4 = "3142"
+
